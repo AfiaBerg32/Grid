@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    background-image: radial-gradient( whitesmoke, black);
+    padding: 10px;
+}
+.container > div{
+    padding: 20px;
+
+}
+img{
+    width: 100%; 
+    min-height: 30vh;
+    padding: 15px;
+}
+.wrapper-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+}
+/* || SMALL*/
+@media screen and (min-width: 600px){
+    .container{
+        padding: 25px;
+        background-color: purple;
+        background-image: radial-gradient(whitesmoke, purple);
+    }
+    .wrapper-grid{
+        grid-template-columns: repeat( 1, 1fr);
+    }
+}
+
+/* || MEDIUM*/
+@media screen and (min-width: 768px){
+    .container{
+        padding: 12px;
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke,  dodgerblue);
+    }
+
+    .wrapper-grid{
+        grid-template-columns: repeat( 2, 1fr);
+    }
+}
+
+/* || LARGE*/
+@media screen and (min-width: 992px){
+    .container{
+        padding: 10px;
+        background-color: palevioletred;
+        background-image: radial-gradient(whitesmoke,  palevioletred);
+    }
+
+    .wrapper-grid{
+        grid-template-columns: repeat( 3, 1fr);
+    }
+}
+
+/* || XL*/
+@media screen and (min-width: 1201px){
+    .container{
+        padding: 12px;
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke,  dodgerblue);
+    }
+
+    .wrapper-grid{
+        grid-template-columns: repeat( 3, 1fr);
+    }
+}
+
+
+
+
